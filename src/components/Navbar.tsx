@@ -48,9 +48,8 @@ export default function Navbar() {
           {/* Desktop Navigation links */}
           <div className="hidden md:flex items-center gap-8">
             <a 
-              href="#gdg-build-program" 
-              onClick={(e) => scrollToSection(e, 'gdg-build-program')}
-              className="text-google-gray-light hover:text-google-gray transition-colors cursor-pointer"
+              href="/gdg-build-program" 
+              className="text-google-gray-light hover:text-google-gray transition-colors cursor-pointer text-[#ff9501]"
             >
               Build Program
             </a>
@@ -107,7 +106,7 @@ export default function Navbar() {
               <a 
                 href="#gdg-build-program" 
                 onClick={(e) => scrollToSection(e, 'gdg-build-program')}
-                className="text-google-gray-light hover:text-google-gray transition-colors px-4 py-2 cursor-pointer"
+                className="text-google-gray-light hover:text-google-gray transition-colors px-4 py-2 cursor-pointer text-[#ff9501]"
               >
                 Build Program
               </a>

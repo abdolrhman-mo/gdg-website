@@ -47,9 +47,9 @@ export default function GDGBuildProgram() {
                 >
                   Join Now
                 </Link>
-                {/* <a href="#gdg-build-program" className="px-6 py-3 border border-gray-300 text-google-gray font-medium rounded-lg hover:bg-gray-50 transition-colors cursor-pointer">
+                <a href="/gdg-build-program" className="px-6 py-3 border border-gray-300 text-google-gray font-medium rounded-lg hover:bg-gray-50 transition-colors cursor-pointer">
                   Learn More
-                </a> */}
+                </a>
               </div>
             </div>
           </div>

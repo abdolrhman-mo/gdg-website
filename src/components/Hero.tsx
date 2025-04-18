@@ -1,22 +1,9 @@
 'use client';
 
 import Image from 'next/image';
+import Heading from '@/components/ui/heading';
 
 export default function Hero() {
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
-    e.preventDefault();
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const offset = 80; // Account for fixed navbar height
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    }
-  };
 
   return (
     <section className="relative">
@@ -26,9 +13,12 @@ export default function Hero() {
           <div className="space-y-12">
             {/* Main heading */}
             <div className="space-y-4">
-              <h1 className="text-5xl font-medium text-google-gray">
-                GDG on Campus at <span className="text-[#D2232A]">Egyptian Chinese University</span>
-              </h1>
+              <Heading 
+                title="GDG on Campus at"
+                highlightedText="Egyptian Chinese University"
+                highlightColor="#D2232A"
+                className="text-google-gray"
+              />
             </div>
 
             {/* Description */}
@@ -39,15 +29,13 @@ export default function Hero() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <a 
-                  href="#social-links" 
-                  onClick={(e) => scrollToSection(e, 'social-links')}
+                  href="/recruitment" 
                   className="px-6 py-3 bg-[#4285F4] text-white font-medium rounded-lg hover:bg-blue-600 transition-colors cursor-pointer"
                 >
-                  Follow Us
+                  Join Us
                 </a>
                 <a 
-                  href="#gdg-build-program" 
-                  onClick={(e) => scrollToSection(e, 'gdg-build-program')}
+                  href="/gdg-build-program" 
                   className="px-6 py-3 border border-gray-300 text-google-gray font-medium rounded-lg hover:bg-gray-50 transition-colors cursor-pointer"
                 >
                   GDG Build Program
