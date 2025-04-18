@@ -6,21 +6,21 @@ const competitions = [
     name: 'Build with AI Hackathon',
     date: 'May 3 – July 19, 2025',
     link: 'https://gdg.community.dev/events/details/google-gdg-alexandria-presents-build-with-ai-series-workshops-amp-hackathon-2025-05-03/',
-    description: 'Join us for an exciting hackathon focused on building innovative solutions with AI.',
+    description: 'We are joining the Build with AI Hackathon and build innovative solutions with AI.',
     logo: '/images/gdg-build/competitions/gdg.jpg'
   },
   {
     name: 'NASA Space Apps Cairo',
     date: 'This summer',
     link: 'https://www.spaceappscairo.com/',
-    description: 'Participate in the global NASA Space Apps Challenge and solve real-world problems.',
+    description: 'For the second year in a row, we are participating in the global NASA Space Apps Challenge and solve real-world problems.',
     logo: '/images/gdg-build/competitions/nasa-space-apps.png'
   },
   {
     name: 'Benha Hackathon',
     date: 'Next year',
     link: 'https://hackathon.bu.edu.eg/',
-    description: 'A local hackathon focused on solving community challenges with technology.',
+    description: 'After qualifying and going to Benha the past season, we will be joining it for the second year in a row.',
     logo: '/images/gdg-build/competitions/benha-hackathon.jpg'
   }
 ];
