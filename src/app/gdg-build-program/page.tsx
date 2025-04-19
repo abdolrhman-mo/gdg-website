@@ -7,7 +7,7 @@ import CallToAction from '@/components/GDGBuildProgram/CallToAction';
 import Navbar from '@/components/Navbar';
 import CompetitionsWeParticipated from '@/components/GDGBuildProgram/CompetitionsWeParticipated';
 // import Features from "@/components/GDGBuildProgram/Features";
-import Gallery from "@/components/GDGBuildProgram/Gallery";
+// import Gallery from "@/components/GDGBuildProgram/Gallery";
 
 export default function GDGBuildProgram() {
   return (
