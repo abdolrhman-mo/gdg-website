@@ -38,7 +38,7 @@ export default function RecruitmentFormPage() {
                 </span>
               </p>
               <h1 className="text-4xl font-medium text-google-gray">
-                Join the <span className="text-[#ff9501]">GDG Build</span> Program
+                Join the <Link href="/gdg-build-program" className="hover:underline text-[#ff9501]"><span className="text-[#ff9501]">GDG Build</span></Link> Program
               </h1>
               <p className="text-lg text-google-gray-light">
                 Build real projects. Win competitions. Launch startups.
@@ -65,6 +65,20 @@ export default function RecruitmentFormPage() {
                   You need to have worked with a specific technology or have worked on some kind of website, or application before. Whether alone or on a team.
                 </p>
               </div>
+            </div>
+
+            {/* Learn More Section - More Subtle */}
+            <div className="block md:flex items-center justify-center space-x-2 text-google-gray-light">
+              <p>Want to learn more about the program?</p>
+              <Link 
+                href="/gdg-build-program"
+                className="text-[#ff9501] hover:text-[#ff9501]/80 font-medium inline-flex items-center"
+              >
+                Click here
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
             </div>
           </div>
 
