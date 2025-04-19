@@ -39,6 +39,9 @@ export default function DeepDive() {
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
+        <h2 className="text-4xl font-semibold text-center mb-16">
+          Why Join <span className="text-[#ff9501]">GDG Build Program?</span>
+        </h2>
         {sections.map((section, index) => (
           <div key={index} className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 mb-16`}>
             <div className="w-full md:w-1/2">
