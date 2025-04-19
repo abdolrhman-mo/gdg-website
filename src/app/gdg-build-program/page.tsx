@@ -15,7 +15,7 @@ export default function GDGBuildProgram() {
       <Navbar />
       <Hero />
       <CompetitionsWeParticipated />
-      <Gallery />
+      {/* <Gallery /> */}
       {/* <Features />  */}
       <DeepDive />
       {/* <WinningStrategies /> */}
