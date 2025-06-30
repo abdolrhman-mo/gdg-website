@@ -6,8 +6,13 @@ import Heading from '@/components/ui/heading';
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-green-50 opacity-60" />
+      {/* Background gradient with floating elements */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-green-50 opacity-60">
+        {/* Background floating elements */}
+        <div className="absolute top-1/4 left-1/4 w-6 h-6 bg-[#FBBC04] rounded-full animate-ping opacity-30" />
+        <div className="absolute top-3/4 right-1/4 w-4 h-4 bg-[#EA4335] rounded-full animate-pulse opacity-25" />
+        <div className="absolute top-1/2 right-1/3 w-5 h-5 bg-[#34A853] rounded-full animate-bounce opacity-20" />
+      </div>
       
       <div className="relative max-w-7xl mx-auto px-4 py-24 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -62,10 +67,9 @@ export default function Hero() {
             {/* Overlay gradient */}
             <div className="absolute inset-0 bg-gradient-to-tr from-black/20 to-transparent" />
             
-            {/* Floating elements */}
+            {/* Floating elements on image */}
             <div className="absolute top-4 right-4 w-12 h-12 bg-[#4285F4] rounded-full animate-bounce opacity-80" />
             <div className="absolute bottom-4 left-4 w-8 h-8 bg-[#EA4335] rounded-full animate-pulse opacity-80" />
-            <div className="absolute top-1/2 left-4 w-6 h-6 bg-[#FBBC04] rounded-full animate-ping opacity-60" />
           </div>
         </div>
       </div>
