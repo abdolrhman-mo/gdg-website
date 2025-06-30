@@ -25,12 +25,12 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+    <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md z-50 border-b border-gray-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo and text */}
-          <Link href="/" className="flex items-center gap-3">
-            <div className="relative w-12 h-12">
+          <Link href="/" className="flex items-center gap-3 group">
+            <div className="relative w-12 h-12 transform group-hover:scale-110 transition-transform duration-300">
               <Image
                 src="/images/logo.png"
                 alt="GDG Logo"
@@ -39,7 +39,7 @@ export default function Navbar() {
               />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-medium text-google-gray">
+              <span className="text-xl font-semibold text-google-gray group-hover:text-[#4285F4] transition-colors duration-300">
                 GDG on Campus <span className="text-[#D2232A]">ECU</span>
               </span>
             </div>
@@ -48,21 +48,22 @@ export default function Navbar() {
           {/* Desktop Navigation links */}
           <div className="hidden md:flex items-center gap-8">
             <a 
-              href="/gdg-build-program" 
-              className="text-google-gray-light hover:text-google-gray transition-colors cursor-pointer text-[#ff9501]"
+              href="#competitions-participated" 
+              onClick={(e) => scrollToSection(e, 'competitions-participated')}
+              className="text-google-gray-light hover:text-[#4285F4] transition-colors cursor-pointer font-medium"
             >
-              Build Program
+              Our Achievements
             </a>
             <a 
               href="#social-links" 
               onClick={(e) => scrollToSection(e, 'social-links')}
-              className="text-google-gray-light hover:text-google-gray transition-colors cursor-pointer"
+              className="text-google-gray-light hover:text-[#34A853] transition-colors cursor-pointer font-medium"
             >
               Follow Us
             </a>
             <Link
               href="/recruitment"
-              className="px-4 py-2 bg-[#4285F4] text-white font-medium rounded-lg hover:bg-blue-600 transition-colors"
+              className="px-6 py-2 bg-gradient-to-r from-[#4285F4] to-[#34A853] text-white font-semibold rounded-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300"
             >
               Join Us
             </Link>
@@ -104,22 +105,22 @@ export default function Navbar() {
           }`}>
             <div className="flex flex-col gap-4">
               <a 
-                href="#gdg-build-program" 
-                onClick={(e) => scrollToSection(e, 'gdg-build-program')}
-                className="text-google-gray-light hover:text-google-gray transition-colors px-4 py-2 cursor-pointer text-[#ff9501]"
+                href="#competitions-participated" 
+                onClick={(e) => scrollToSection(e, 'competitions-participated')}
+                className="text-google-gray-light hover:text-[#4285F4] transition-colors px-4 py-2 cursor-pointer font-medium"
               >
-                Build Program
+                Our Achievements
               </a>
               <a 
                 href="#social-links" 
                 onClick={(e) => scrollToSection(e, 'social-links')}
-                className="text-google-gray-light hover:text-google-gray transition-colors px-4 py-2 cursor-pointer"
+                className="text-google-gray-light hover:text-[#34A853] transition-colors px-4 py-2 cursor-pointer font-medium"
               >
                 Follow Us
               </a>
               <Link
                 href="/recruitment"
-                className="text-google-gray-light hover:text-google-gray transition-colors px-4 py-2"
+                className="text-white bg-gradient-to-r from-[#4285F4] to-[#34A853] hover:shadow-lg transition-all duration-300 px-4 py-2 rounded-lg mx-4 text-center font-semibold"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Join Us
@@ -130,4 +131,4 @@ export default function Navbar() {
       </div>
     </nav>
   );
-} 
+}
